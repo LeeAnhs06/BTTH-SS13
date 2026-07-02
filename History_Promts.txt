@@ -1,0 +1,15 @@
+Prompt 1: Đóng vai trò Senior System Analyst có 10 năm kinh nghiệm thiết kế hệ thống SaaS. Tôi đang làm dự án "Hệ thống Quản lý Chuỗi Phòng hát Karaoke". Hãy giúp tôi xác định: 1. Ít nhất 3 phân hệ (Module) cốt lõi, 2. Ít nhất 3 Actor tham gia hệ thống, 3. Mục tiêu cốt lõi của dự án. Trình bày rõ ràng, chuyên nghiệp.
+
+Prompt 2: Dựa trên bối cảnh đã chốt ở trên. Bây giờ hãy đi sâu vào phân tích chi tiết các Yêu cầu Chức năng (Functional Requirements) cho 3 module cốt lõi. Hãy chia theo từng module, mỗi chức năng hãy viết theo cấu trúc: Mã chức năng (FR-xx), Tên chức năng, Mô tả, Đầu vào, Đầu ra. Tạm thời chưa cần viết phần phi chức năng.
+
+Prompt 3: Tốt. Tuy nhiên luồng nghiệp vụ của module Đặt phòng & POS đang thiếu trường hợp ngoại lệ. Hãy thêm vào: 1. Chức năng xử lý phạt quá giờ (surcharges), 2. Chức năng gọi món từ phòng hát tự động gửi xuống bếp/bar, 3. Trạng thái phòng (Đang trống, Đang dọn, Đang hát, Đặt trước). Hãy cập nhật lại danh sách FR cho đủ các trường hợp này.
+
+Prompt 4: Bây giờ hãy viết danh sách User Stories cho toàn bộ hệ thống dựa trên các FR đã cập nhật. Đảm bảo dùng chuẩn: "As a [actor], I want to [action], so that [benefit]". Phân nhóm User Story theo từng Actor.
+
+Prompt 5: Tiếp theo, hãy viết phần Non-Functional Requirements (Yêu cầu phi chức năng). Tập trung vào 3 khía cạnh: Performance (thời gian phản hồi gọi món, đồng bộ), Security (bảo mật dữ liệu khách hàng, phân quyền), Availability (tính sẵn sàng khi cao điểm cuối tuần). Đưa ra các con số định lượng cụ thể.
+
+Prompt 6: Giờ là phần sơ đồ. Hãy sinh mã Mermaid để vẽ Use Case Diagram cho hệ thống này. Đảm bảo thể hiện đủ 3 Actors đã xác định. Sử dụng cú pháp <<include>> hoặc <<extend>> cho các luồng như "Thanh toán hóa đơn" bao gồm "Áp dụng mã giảm giá" và "Xử lý phạt quá giờ". Chỉ trả về block code Mermaid.
+
+Prompt 7: Sơ đồ Use Case Actor Khách hàng đang thiếu hành động "Xem lịch sử đặt phòng" và "Đánh giá dịch vụ". Hãy viết lại mã Mermaid bổ sung 2 use case này vào Actor Khách hàng.
+
+Prompt 8: Cuối cùng, hãy sinh mã Mermaid để vẽ ERD (Entity Relationship Diagram) cho cơ sở dữ liệu của hệ thống. Đảm bảo có các bảng chính: Customer, Room, RoomType, Booking, Order, OrderItem, MenuItem, Invoice. Chỉ rõ khóa chính (PK), khóa ngoại (FK) và các mối quan hệ 1-N, N-N (Ví dụ: Booking và MenuItem là N-N thông qua bảng OrderItem). Chỉ trả về block code Mermaid.
